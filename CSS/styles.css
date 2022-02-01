@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/*                                                                  First Section Start*/
+
+#firstSection {
+    background-image: linear-gradient(rgba(0, 0, 100, 0.3), rgba(0, 0, 50, 0.5), rgba(0, 0, 20, 0.6)), url(/Assets/images/blackm.jpg);
+    height: 100vh;
+    z-index: -2;
+}
+
+nav {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1;
+    border-bottom: 0.1px solid black;
+}
+
+nav h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: snow;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav #menubtn {
+    border: 1px solid crimson;
+    background-color: transparent;
+    color: crimson;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1.2% 2%;
+    border-radius: 3px;
+    position: absolute;
+    visibility: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    opacity: 0.8;
+}
+
+nav ul li .active {
+    color: crimson;
+}
+
+nav ul li .active:hover {
+    color: snow;
+}
+
+
+
+/*                                                Navbar End */
+
+
+#homeMain {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+}
+
+#homeMain h1:nth-child(1) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: line1 2s steps(12);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+#homeMain h1:nth-child(1) span {
+    color: crimson;
+}
+
+@keyframes line1 {
+    0% {
+        width: 0ch;
+        border-right: 0.25rem solid black;
+    }
+
+    99% {
+        width: 11ch;
+        border-right: 0.25rem solid black;
+    }
+
+    100% {
+        width: 11ch;
+    }
+}
+
+#homeMain h1:nth-child(2) {
+    font-size: 3rem;
+    animation: line2 3s steps(16);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+    overflow: hidden;
+    visibility: hidden;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+
+@keyframes line2 {
+    0% {
+        width: 0ch;
+        border-right: 0.25rem solid black;
+    }
+
+    99% {
+        width: 15ch;
+        border-right: 0.25rem solid black;
+    }
+
+    100% {
+        width: 15ch;
+    }
+}
+
+#homeMain p {
+    font-size: 7rem;
+    margin-top: 50px;
+    visibility: hidden;
+}
+
+#homeMain p a {
+    color: snow;
+    text-decoration: none;
+    animation: arrowdown 2s;
+    animation-iteration-count: 1;
+    animation-delay: 6.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes arrowdown {
+    0% {
+        border-bottom: 2px solid snow;
+    }
+
+    10% {
+        border-bottom: 2px solid transparent;
+    }
+
+    20% {
+        border-bottom: 2px solid snow;
+    }
+
+    30% {
+        border-bottom: 2px solid transparent;
+    }
+
+    40% {
+        border-bottom: 2px solid snow;
+    }
+
+    50% {
+        border-bottom: 2px solid transparent;
+    }
+
+    60% {
+        border-bottom: 2px solid snow;
+    }
+
+    70% {
+        border-bottom: 2px solid transparent;
+    }
+
+    80% {
+        border-bottom: 2px solid snow;
+    }
+
+    90% {
+        border-bottom: 2px solid crimson;
+    }
+
+    100% {
+        border-bottom: 2px solid transparent;
+    }
+}
+
+
+/*                                          First section end */
+
+
+
+/*                                          Second section start */
+
+#secondSection {
+    align-items: center;
+    display: flex;
+    flex-wrap: initial;
+    padding: 5%;
+}
+
+#location {
+    display: inline;
+}
+
+#mail {
+    color: crimson;
+    text-decoration: none;
+    margin-left: 1%;
+}
+
+.leftColumn {
+    border: 5px solid crimson;
+    margin-left: 5%;
+}
+
+.rightColumn {
+    margin-left: 7%;
+}
+
+.rightColumn h1 {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.rightColumn h1 span {
+    color: crimson;
+
+}
+
+.rightColumn p {
+    margin-top: 10px;
+    color: gray;
+    display: inline-block;
+    line-height: 1.6rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+}
+
+#downloadResume {
+    background-color: crimson;
+    border: 1px solid transparent;
+    color: snow;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    padding: 2%;
+    transition: all ease-in 0.4s;
+}
+
+#downloadResume:hover {
+    border: 1px solid crimson;
+    background-color: snow;
+    color: crimson;
+}
+
+#moreAbout p {
+    position: absolute;
+    top: 165vh;
+    width: 20%;
+    right: 5%;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: all ease;
+    color: rgb(2, 82, 255);
+    font-weight: 100;
+}
+
+/*                                  Third Section start */
+hr {
+    margin: 10px 0;
+}
+
+#thirdSection {
+    display: flex;
+    flex-direction: column;
+    margin: 7%;
+}
+
+.mainHeading {
+    color: crimson;
+    font-size: 2.2rem;
+
+}
+
+.heading {
+    margin-top: 60px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+}
+
+.course {
+    color: gray;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+
+}
+
+.duration {
+    color: crimson;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.para {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: gray;
+    line-height: 1.8rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+}
+
+.aboutMenu {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.aboutNav {
+    text-decoration: none;
+    color: crimson;
+}
+
+
+/*                                  Third section end */
+/*                                  fourth section start */
+#fourthSection {
+    display: flex;
+    flex-direction: column;
+    margin: 7%;
+
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up a {
+    text-decoration: none;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    color: rgb(5, 105, 255);
+    cursor: pointer;
+
+}
+
+
+
+/*                                  fourth section end */
+
+
+/*                                  fifth section start */
+#fifthSection {
+    display: flex;
+    flex-direction: column;
+    margin: 7%;
+    flex-direction: column;
+}
+
+.skillsHeading {
+    font-size: 2.5rem;
+    color: crimson;
+    letter-spacing: 2px;
+}
+
+.skillsSubHeading {
+    font-size: 2rem;
+    margin-top: 3%;
+    color: black;
+}
+
+#fifthSection ul {
+    display: flex;
+    list-style: none;
+}
+
+#fifthSection ul .skillsList {
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 2rem;
+    color: crimson;
+}
+
+
+
+.workflow {
+    display: flex;
+    font-size: 1.8rem;
+    flex-direction: row;
+}
+
+.skillul li {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: block;
+}
+
+/*                                 footer section */
+
+
+.mainf {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    background-color: black;
+    flex-direction: column;
+    color: snow;
+    width: 100vw;
+    margin: 0;
+}
+
+.mainf a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    display: block;
+    font-size: 1rem;
+}
+
+
+/* ======================================================== */
+
+@media (min-width:640px) and (max-width:950px) {
+    nav #menubtn {
+        position: static;
+        visibility: visible;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: all ease-in 0.2s;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+        background-color: black;
+        opacity: 0.8;
+    }
+
+    nav ul li {
+        padding: 3%;
+        margin-top: 5px;
+    }
+
+    nav ul li .active {
+        color: crimson;
+    }
+
+    nav ul li a {
+        color: white;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 15px;
+
+    }
+
+    .rightColumn h1 {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    #secondSection {
+        flex-direction: column-reverse;
+    }
+
+    #secondSection .rightColumn {
+        margin-bottom: 50px;
+    }
+
+    #secondSection .rightColumn {
+        margin: 2%;
+        margin-bottom: 5%;
+    }
+
+    #secondSection .leftColumn {
+        margin: 2%;
+        margin-top: 5%;
+    }
+
+    #moreAbout p {
+        visibility: hidden;
+    }
+
+    #homeMain h1:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    #homeMain h1:nth-child(2) {
+        font-size: 2.3rem;
+    }
+
+}
+
+
+
+@media (min-width:420px) and (max-width:640px) {
+    nav #menubtn {
+        position: static;
+        visibility: visible;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: all ease-in 0.2s;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+        background-color: black;
+        opacity: 0.8;
+    }
+
+    nav ul li {
+        padding: 3%;
+        margin-top: 5px;
+    }
+
+    nav ul li .active {
+        color: crimson;
+    }
+
+    nav ul li a {
+        color: white;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 15px;
+
+    }
+
+    .rightColumn h1 {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .mainHeading {
+        color: crimson;
+        font-size:1.8rem;
+    
+    }
+    .heading{
+        font-size: 1.4rem;
+    }
+    .skillsHeading{
+        font-size: 1.8rem;
+    }
+    .skillsSubHeading{
+        font-size: 1.4rem;
+    }
+    
+
+    #secondSection {
+        flex-direction: column-reverse;
+    }
+
+    #secondSection .rightColumn {
+        margin-bottom: 50px;
+    }
+
+    #secondSection .rightColumn {
+        margin: 2%;
+        margin-bottom: 5%;
+    }
+
+    #secondSection .leftColumn {
+        margin: 2%;
+        margin-top: 5%;
+    }
+
+    #moreAbout p {
+        visibility: hidden;
+    }
+
+    #homeMain h1:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    #homeMain h1:nth-child(2) {
+        font-size: 2.3rem;
+    }
+
+
+
+
+}
+
+
+
+@media (min-width:110px) and (max-width:420px) {
+    nav #menubtn {
+        position: static;
+        visibility: visible;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: all ease-in 0.2s;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+        background-color: black;
+        opacity: 0.8;
+    }
+
+    nav ul li {
+        padding: 3%;
+        margin-top: 5px;
+    }
+
+    nav ul li .active {
+        color: crimson;
+    }
+
+    nav ul li a {
+        color: white;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 15px;
+
+    }
+
+    .rightColumn h1 {
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .mainHeading {
+        color: crimson;
+        font-size:1.4rem;
+    
+    }
+    .skillsHeading{
+        font-size: 1.4rem;
+    }
+    .skillsSubHeading{
+        font-size: 1.1rem;
+    }
+    .heading{
+        font-size: 1.1rem;
+    }
+
+    #secondSection {
+        flex-direction: column-reverse;
+    }
+
+    #secondSection .rightColumn {
+        margin-bottom: 50px;
+    }
+
+    #secondSection .rightColumn {
+        margin: 2%;
+        margin-bottom: 5%;
+    }
+
+    #secondSection .leftColumn {
+        margin: 2%;
+        margin-top: 5%;
+    }
+
+    #moreAbout p {
+        visibility: hidden;
+    }
+
+    #homeMain h1:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    #homeMain h1:nth-child(2) {
+        font-size: 2.3rem;
+    }
+
+}

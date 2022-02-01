@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/*                                                                  First Section Start*/
+
+
+
+nav {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1;
+    border-bottom: 0.1px solid black;
+}
+
+nav h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color:snow;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav #menubtn {
+    border: 1px solid crimson;
+    background-color: transparent;
+    color: crimson;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1.2% 2%;
+    border-radius: 3px;
+    position: absolute;
+    visibility: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    opacity: 0.8;
+}
+
+nav ul li .active {
+    color: crimson;
+}
+
+nav ul li .active:hover {
+    color: snow;
+}
+
+/* navbar ends */
+
+
+/* section one starts */
+#one{
+    margin: 5% 7%;
+    border-left: 2px solid crimson;
+    padding-left: 2%;
+}
+#mainHeading{
+
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    color: crimson;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main img{
+    width: 70vw;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease;
+}
+.main img:hover{
+
+    box-shadow: 0 6px 8px 0 rgba(255, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+.line1{
+    color: crimson;
+    margin-top: 5%;
+}
+.line2{
+    margin: 2% 0;
+}
+.lang{
+    color: crimson;
+}
+.lang span{
+    color: mediumspringgreen;
+}
+.line3{
+    margin-bottom:1%;
+    color: gray;
+}
+.main p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: rgb(109, 108, 108);
+}
+.main img{
+    cursor: pointer;
+}
+
+.mainf{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    background-color: black;
+    flex-direction: column;
+    color: snow;
+}
+.mainf a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    display: block;
+    font-size: 1rem;
+}
+.up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(5, 105, 255);
+    cursor: pointer;
+    margin-top: 2%;
+
+}
+
+
+@media (min-width:600px) and (max-width:950px) {
+    nav #menubtn {
+        position: static;
+        visibility: visible;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: all ease-in 0.2s;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+        background-color: black;
+        opacity:0.93;
+    }
+
+    nav ul li {
+        padding:3%;
+        margin-top:5px;
+    }
+
+    nav ul li .active {
+        color: crimson;
+    }
+
+    nav ul li a {
+        color: white;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 15px;
+
+    }
+
+
+}
+
+
+@media (min-width:110px) and (max-width:640px){
+
+    nav #menubtn {
+        position: static;
+        visibility: visible;
+
+    }
+
+    nav ul {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        transition: all ease-in 0.2s;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+        background-color: black;
+        opacity:0.93;
+    }
+
+    nav ul li {
+        padding:3%;
+        margin-top:5px;
+    }
+
+    nav ul li .active {
+        color: crimson;
+    }
+
+    nav ul li a {
+        color: white;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 15px;
+
+    }
+    #one{
+        margin: 5% 4%;
+        border-left: 2px solid crimson;
+        padding-left: 2%;
+    }
+
+    .line2{
+        font-size: 1.2rem;
+    }
+    .line3{
+        font-size: 1.2rem;
+    }
+    .main p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: rgb(109, 108, 108);
+    }
+    .main img{
+        width: 80vw;
+        height: auto;
+        margin-left: 2%;
+        margin-top: 3%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 0.5s ease;
+    }
+
+}
