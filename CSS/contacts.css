@@ -157,7 +157,21 @@ nav ul li .active:hover {
         padding: 15px;
 
     }
-
+    .container p{
+        font-size: 1.5rem;
+        text-align: center;
+        color: crimson;
+        font-weight: bold;
+    }
+    .icon{
+        color: snow;
+        transition: all 0.4s ease;
+        font-size: 5rem;
+    
+    }
+    .icon:hover{
+        color: crimson;
+    }
 
 }
 
