@@ -72,13 +72,33 @@ nav ul li .active:hover {
 
 
 /*                                                Navbar End */
-
+#contactsMain{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(../Assets/images/one.jpg);
+    background-size: cover;
+}
 .container{
     display:flex;
-    flex-direction: column;
+    flex-direction:row;
+    font-size: 5rem;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content:space-around;
     height:80vh;
+}
+.container p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+}
+.icon{
+    color: snow;
+    transition: all 0.4s ease;
+    font-size: 5rem;
+
+}
+.icon:hover{
+    color: crimson;
 }
 .talk{
     background-color: crimson;
@@ -90,37 +110,8 @@ nav ul li .active:hover {
     justify-content: center;
     align-items: center;
 }
-.talk h1{
-    margin-bottom: 2%;
-}
-input{
-    height: 5vh;
-}
-#input1{
-    width: 32ch;
-}
 
 
-label{
-    display: block;
-    font-size: 1.5rem;
-    color: crimson;
-}
-#sub {
-    background-color: crimson;
-    border: 1px solid transparent;
-    color: snow;
-    font-size: 1.3rem;
-    margin-top: 30px;
-    padding: 2%;
-    transition: all ease-in 0.4s;
-}
-
-#sub:hover {
-    border: 1px solid crimson;
-    background-color: snow;
-    color: crimson;
-}
 #contactsMain{
     display: flex;
     flex-direction: column;
@@ -215,8 +206,25 @@ label{
         padding: 1%;
         text-align: center;
     }
-    .talk h1{
-        margin-bottom: 3%;
+
+    .container{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-around;
+        height:80vh;
+    }
+    .container p{
+        font-size: 1.5rem;
+        text-align: center;
+        color: crimson;
+    }
+    .icon{
+        color: snow;
+        transition: all 0.4s ease;
+        font-size: 5rem;
+    
     }
 
 }
