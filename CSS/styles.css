@@ -15,7 +15,7 @@ html {
 /*                                                                  First Section Start*/
 
 #firstSection {
-    background-image: linear-gradient(rgba(0, 0, 100, 0.3), rgba(0, 0, 50, 0.5), rgba(0, 0, 20, 0.6)), url(/Assets/images/blackm.jpg);
+    background-image: linear-gradient(rgba(0, 0, 100, 0.3), rgba(0, 0, 50, 0.5), rgba(0, 0, 20, 0.6)), url(../Assets/images/blackm.jpg);
     height: 100vh;
     z-index: -2;
 }
