@@ -224,16 +224,19 @@ nav ul li .active:hover {
 
 #location {
     display: inline;
+    font-size: 1.5rem;
 }
 
 #mail {
     color: crimson;
     text-decoration: none;
     margin-left: 1%;
+    font-size: 1.5rem;
+
 }
 
 .leftColumn {
-    border: 5px solid crimson;
+    /* border: 5px solid crimson; */
     margin-left: 5%;
 }
 
@@ -254,11 +257,12 @@ nav ul li .active:hover {
 
 .rightColumn p {
     margin-top: 10px;
-    color: gray;
+    color: black;
     display: inline-block;
     line-height: 1.6rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1px;
     text-align: left;
+    font-weight: bold;
 }
 
 #downloadResume {
@@ -310,7 +314,7 @@ hr {
     margin-top: 60px;
     font-size: 1.8rem;
     margin-bottom: 10px;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1pxrem;
 }
 
 .course {
@@ -327,12 +331,20 @@ hr {
 }
 
 .para {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem;
     margin: 20px 0;
-    color: gray;
+    color: black;
     line-height: 1.8rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1px;
     text-align: left;
+    font-weight: bold; */
+    margin-top: 10px;
+    color: black;
+    display: inline-block;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: bold;
 }
 
 .aboutMenu {
@@ -597,7 +609,9 @@ hr {
         margin: 2%;
         margin-bottom: 5%;
     }
-
+    .para{
+        font-size:0.8rem;
+    }
     #secondSection .leftColumn {
         margin: 2%;
         margin-top: 5%;

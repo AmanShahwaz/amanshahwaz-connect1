@@ -87,13 +87,14 @@ nav ul li .active:hover {
 
 .heading {
     font-size: 1.8rem;
-    margin-bottom: 10px;
-    letter-spacing: 0.2rem;
+    margin:20px 0;
+    letter-spacing: 1px;
+
 }
 
 .course {
-    color: gray;
-    font-size: 1.4rem;
+    color: rgb(48, 48, 48);
+    font-size: 1.2rem;
     margin-bottom: 10px;
 
 }
@@ -106,10 +107,13 @@ nav ul li .active:hover {
 
 .para {
     margin: 20px 0;
-    color: gray;
+    color: rgb(48, 48, 48);
     line-height: 1.5rem;
     letter-spacing: 0.2rem;
     text-align: left;
+}
+.intpara{
+    color: rgb(48, 48, 48);
 }
 
 
@@ -446,8 +450,8 @@ nav ul li .active:hover {
     }
     
     .course {
-        color: gray;
-        font-size: 1.2rem;
+        color:rgb(48, 48, 48) ;
+        font-size: 1rem;
         margin-bottom: 10px;
     
     }
@@ -455,14 +459,18 @@ nav ul li .active:hover {
     .duration {
         color: crimson;
         font-weight: 500;
-        letter-spacing: 1px;
+        font-size: 0.97rem;
+    }
+    .intpara{
+        color: rgb(48, 48, 48);
+    
     }
     
     .para {
         margin: 20px 0;
-        color: gray;
+        color: rgb(34, 34, 34);
         line-height: 1rem;
-        letter-spacing: 0.08rem;
+        letter-spacing: 1px;
         text-align: left;
     }
 
